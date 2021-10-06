@@ -1,6 +1,7 @@
 # workflow name
 name: Hexo Blog CI
-
+env: 
+  TZ: Asia/Shanghai # 时区
 # master branch on push, auto run
 on: 
   push:
