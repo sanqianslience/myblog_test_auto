@@ -27,7 +27,7 @@ jobs:
       run: |
         npm install hexo-cli -g
         npm install        
-    
+        npm install --save hexo-deployer-git
     - name: Setup Deploy Private Key
       env:
         HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
@@ -39,8 +39,8 @@ jobs:
                 
     - name: Setup Git Infomation
       run: | 
-        git config --global user.name 'sanqianslience' 
         git config --global user.email '1638866761@qq.com'
+        git config --global user.name 'sanqianslience' 
     - name: Deploy Hexo 
       run: |
         hexo generate 
