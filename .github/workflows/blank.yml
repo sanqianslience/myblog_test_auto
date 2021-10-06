@@ -18,10 +18,10 @@ jobs:
       uses: actions/checkout@master 
       
     # from: https://github.com/actions/setup-node  
-    - name: Setup Node.js 16.x 
+    - name: Setup Node.js 16.9.1
       uses: actions/setup-node@master
       with:
-        node-version: "16.x"
+        node-version: "16.9.1"
     
     - name: Setup Hexo Dependencies
       run: |
@@ -43,6 +43,5 @@ jobs:
         git config --global user.email '1638866761@qq.com'
     - name: Deploy Hexo 
       run: |
-        hexo clean
         hexo generate 
         hexo deploy      
