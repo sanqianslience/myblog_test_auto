@@ -43,5 +43,4 @@ jobs:
         git config --global user.name 'sanqianslience' 
     - name: Deploy Hexo 
       run: |
-        hexo generate 
-        hexo deploy      
+        hexo generate    
