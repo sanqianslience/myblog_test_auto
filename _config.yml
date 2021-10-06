@@ -100,7 +100,6 @@ ignore:
 theme: landscape
 
 # Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repo: git@github.com:sanqianslience/sanqianslience.github.io.git
